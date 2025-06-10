@@ -74,16 +74,19 @@ class ListaDeReproduccion{
     //Elimína el elemento del índice y lo devuelve
     pop(indice){
         //Pista: Investiguen el método splice(inicio,numero_de_elementos_a_borrar) dentro del objeto Array
+        let elementoEliminado = this.lista[indice];
+        this.lista.splice(indice, 1);
+        return elementoEliminado;
     }
 
     //Inserta un objeto canción dentro de la lista
     push(objeto){
-        
+        this.lista.push(objeto);
     }
 
     //Devuelve la longitud de la lista
     getSize(){
-        
+       return this.lista.length; 
     }
     
     shuffle(){
@@ -138,3 +141,4 @@ let lista2 = new ListaDeReproduccion([1,2,3,4,3,5,6,7])
 console.log(lista2.get());
 lista2.shuffle();
 console.log(lista2.get());
+console.log(lista2.pop(2));
