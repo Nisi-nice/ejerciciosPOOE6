@@ -77,8 +77,9 @@ class ListaDeReproduccion{
     }
 
     //Inserta un objeto canción dentro de la lista
+    
     push(objeto){
-        
+        this.lista.push(objeto);
     }
 
     //Devuelve la longitud de la lista
