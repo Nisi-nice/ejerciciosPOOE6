@@ -74,6 +74,10 @@ class ListaDeReproduccion{
     //Elimína el elemento del índice y lo devuelve
     pop(indice){
         //Pista: Investiguen el método splice(inicio,numero_de_elementos_a_borrar) dentro del objeto Array
+        // let  elementoEliminado = this.lista.splice(indice, 1);
+        let elementoEliminado = this.lista[indice];
+        this.lista.splice(indice, 1);// eliminando 
+        return elementoEliminado;
     }
 
     //Inserta un objeto canción dentro de la lista
@@ -84,14 +88,14 @@ class ListaDeReproduccion{
 
     //Devuelve la longitud de la lista
     getSize(){
-        
+        return this.lista.length;
     }
     
     shuffle(){
         for(let i = 0; i < this.lista.length; i++){
-        let j = Math.floor(Math.random() * (i+1)); //0 al 1
-        intercambiar(this.lista,i,j);
-    }
+            let j = Math.floor(Math.random() * (i+1)); //0 al 1
+            intercambiar(this.lista,i,j);
+        }
     }
 
     //Devuelve la lista
@@ -139,3 +143,18 @@ let lista2 = new ListaDeReproduccion([1,2,3,4,3,5,6,7])
 console.log(lista2.get());
 lista2.shuffle();
 console.log(lista2.get());
+
+
+let s = "";
+for(let i = 0; i<lista2.get().length; i++){
+    let indiceDeCadaCancion = lista2.get()[i];
+    s += indiceDeCadaCancion + " ";
+    console.log(canciones[indiceDeCadaCancion].getNombre());
+    console.log(canciones[indiceDeCadaCancion].getUrl());
+}
+console.log(s);
+
+// console.log(lista2.pop(2));
+console.log(lista2.pop(2));
+
+
