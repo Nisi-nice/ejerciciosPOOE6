@@ -74,14 +74,8 @@ class ListaDeReproduccion{
     //Elimína el elemento del índice y lo devuelve
     pop(indice){
         //Pista: Investiguen el método splice(inicio,numero_de_elementos_a_borrar) dentro del objeto Array
-<<<<<<< HEAD
-        // let  elementoEliminado = this.lista.splice(indice, 1);
         let elementoEliminado = this.lista[indice];
         this.lista.splice(indice, 1);// eliminando 
-=======
-        let elementoEliminado = this.lista[indice];
-        this.lista.splice(indice, 1);
->>>>>>> a73f0b62a60022b1e10e6e357d468b03053fa8d4
         return elementoEliminado;
     }
 
@@ -93,11 +87,7 @@ class ListaDeReproduccion{
 
     //Devuelve la longitud de la lista
     getSize(){
-<<<<<<< HEAD
         return this.lista.length;
-=======
-       return this.lista.length; 
->>>>>>> a73f0b62a60022b1e10e6e357d468b03053fa8d4
     }
     
     shuffle(){
