@@ -4,10 +4,11 @@ class Cancion{
         /*
             Deben de asignar a los atributos que faltan de la clase Cancion como corresponda
         */
-       this.nombre=nombre;
-       this.id=id;
-       this.genero=genero;
-       this.artista=artista;
+        this.nombre=nombre;
+        this.id=id;
+        this.genero=genero;
+        this.artista=artista;
+        this.url = url;
         this.reproduciendo = false; 
     }
 
