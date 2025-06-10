@@ -4,10 +4,11 @@ class Cancion{
         /*
             Deben de asignar a los atributos que faltan de la clase Cancion como corresponda
         */
-       this.nombre=nombre;
-       this.id=id;
-       this.genero=genero;
-       this.artista=artista;
+        this.nombre=nombre;
+        this.id=id;
+        this.genero=genero;
+        this.artista=artista;
+        this.url = url;
         this.reproduciendo = false; 
     }
 
@@ -29,10 +30,11 @@ class Cancion{
     getNombre(){
         return this.nombre;
     }
+    getId(){
+        return this.id;
+    }
+    
 
-    /*
-        Deben de colocar los getters y setters que faltan
-    */
     
 
     //Devuelve true si esta reproduciendo, false en otro caso
@@ -42,12 +44,12 @@ class Cancion{
 
     //Cambia de no reproduciendo a reproduciendo
     play(){
-        
+        this.estaReproduciendo=true ;
     }
 
     //Cambia de reproduciendo a no reproduciendo
     stop(){
-        
+        this.estaReproduciendo=false    
     }
 }
 
