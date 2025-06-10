@@ -47,9 +47,6 @@ class Cancion{
         return this.url;
     }
 
-    /*
-        Deben de colocar los getters y setters que faltan
-    */
     
 
     //Devuelve true si esta reproduciendo, false en otro caso
@@ -59,12 +56,12 @@ class Cancion{
 
     //Cambia de no reproduciendo a reproduciendo
     play(){
-        
+        this.estaReproduciendo=true ;
     }
 
     //Cambia de reproduciendo a no reproduciendo
     stop(){
-        
+        this.estaReproduciendo=false    
     }
 }
 
