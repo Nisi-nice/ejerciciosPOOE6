@@ -13,21 +13,37 @@ class Cancion{
 
     setNombre(nombre){
         this.nombre = nombre;
-    }
-    setId(id){
-        this.id = id;
-    }
-    setGenero(genero){
-        this.genero = genero;
-    }
-    setArtista(artista){
-        this.artista = artista;
-    }
-    setUrl(url){
-        this.url = url;
     }   
     getNombre(){
         return this.nombre;
+    }
+    setId(id)
+    {
+        this.id = id;
+    }
+    getId(){
+        return this.id;
+    }
+    setGenero(genero){
+        this.genero =genero;
+    }
+    getGenero()
+    {
+        return this.genero;
+    }
+    setArtista(artista)
+    {
+        this.artista = artista;
+    }
+    getArtista(){
+        return this.artista;
+    }
+    setUrl(url)
+    {
+        this.url = url;
+    }
+    getUrl(){
+        return this.url;
     }
 
     /*
